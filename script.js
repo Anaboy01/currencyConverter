@@ -26,8 +26,8 @@ const getCurrencyRates = async(fromCurrency, toCurrency) => {
 const appendSelectOptions = (selectEl, optionItem) =>{
       const optionEl = document.createElement('option')
       optionEl.value = optionItem.code;
-      optionEl.textContent = optionItem.code;
-      // optionEl.textContent = optionItem.description;
+      // optionEl.textContent = optionItem.code;
+      optionEl.textContent = optionItem.description;
 
       selectEl.appendChild(optionEl)
 }
